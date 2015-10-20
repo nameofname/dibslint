@@ -16,12 +16,6 @@ module.exports = function (eslintrc, options) {
         args.push('--quiet');
     }
 
-    child = spawn("xargs", args, {stdio: ['pipe', 'pipe', 'pipe']});
-    child.stdout.on('data', function (data) {
-        console.log('' + data);
-    });
-    child.stderr.on('data', function (data) {
-        console.log('' + data);
-    });
+    child = spawn("xargs", args, {stdio: ['pipe', process.stdout, process.stderr]});
     return child;
 };
