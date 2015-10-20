@@ -43,7 +43,7 @@ Promise.all([
     promiseChild(es6Linter),
     promiseChild(es5Linter)
 ]).then(function (args) {
-    if (args[0] + args[1] + args[2] !== 0) {
+    if (!(args[0] === args[1] === args[2] === 0)) {
         process.exit(1);
     }
 });
