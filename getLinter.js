@@ -4,6 +4,7 @@ var spawn = require('child_process').spawn;
 module.exports = function (eslintrc, options) {
     var child;
     var args = [
+        '-0',
         '-P8', // max 8 concurrent eslint processes
         '-n200', // max 200 files per process. Feel free to optimize if you can
         path.resolve(__dirname, './node_modules/.bin/eslint'),

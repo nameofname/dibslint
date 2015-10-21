@@ -2,6 +2,7 @@ require('es6-promise').polyfill();
 
 var opt = require('node-getopt').create([
     ['w', 'warnings', 'enable warnings'],
+    ['e', 'es6', 'allow es6 in .js files'],
     ['', 'root[=path]', 'look for js files in this directory'],
     ['h', 'help', 'display this help']
 ])
@@ -27,11 +28,11 @@ if (opt.argv.length) {
 
 files.forEach(function (filePath) {
     if (filePath.match(/.jsx$/)) {
-        reactLinter.stdin.write(filePath + "\n");
-    } else if (filePath.match(/.es.js$/)) {
-        es6Linter.stdin.write(filePath + "\n");
+        reactLinter.stdin.write(filePath + '\0');
+    } else if (filePath.match(/.es.js$/) || (opt.options.es6 && filePath.match(/.js$/))) {
+        es6Linter.stdin.write(filePath + '\0');
     } else if (filePath.match(/.js$/)) {
-        es5Linter.stdin.write(filePath + "\n");
+        es5Linter.stdin.write(filePath + '\0');
     }
 });
 reactLinter.stdin.end();
