@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var lintFileGroup = require('./lib/lintFileGroup');
 var lintGitFiles = require('./lib/lintGitFiles');
 var opt = require('node-getopt').create([
