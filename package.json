@@ -1,0 +1,19 @@
+{
+  "name": "dibslint",
+  "version": "1.0.0",
+  "description": "1stdibs custom linting",
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "eslint": "^1.7.2",
+    "eslint-config-1stdibs": "^1.1.1",
+    "eslint-plugin-react": "^3.6.3",
+    "glob": "^5.0.15",
+    "lodash.reduce": "^3.1.2",
+    "node-getopt": "^0.2.3",
+    "spawn-sync": "^1.0.13"
+  },
+  "bin": {
+    "dibslint": "./index.js"
+  }
+}
