@@ -1,14 +1,14 @@
 {
   "name": "dibslint",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "1stdibs custom linting",
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
-    "eslint": "1.9.0",
+    "eslint": "1.10.1",
     "eslint-config-1stdibs": "^1.1.5",
     "eslint-plugin-jasmine": "^1.6.0",
-    "eslint-plugin-react": "^3.8.0",
+    "eslint-plugin-react": "3.10.0",
     "glob": "^5.0.15",
     "lodash.assign": "^3.2.0",
     "lodash.omit": "^3.1.0",
