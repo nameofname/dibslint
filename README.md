@@ -1,6 +1,6 @@
 # dibslint
 
-A wrapper around eslint that is smart enough to flag es6 code in files that do not end with .es.js. It is also a central location for 1stdibs eslint configs.
+A wrapper around eslint that is smart enough to flag es6 code in files that do not end with .es.js. It uses eslint configs in [the `eslint-config-1stdibs` package](https://github.com/1stdibs/eslint-config-1stdibs)
 
 ## Usage in PHPStorm
 
