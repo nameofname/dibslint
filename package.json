@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "eslint": "1.10.1",
-    "eslint-config-1stdibs": "^1.1.5",
+    "eslint-config-1stdibs": "^2.0.1",
     "eslint-plugin-jasmine": "^1.6.0",
     "eslint-plugin-react": "3.10.0",
     "glob": "^5.0.15",
