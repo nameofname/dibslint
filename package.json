@@ -9,6 +9,7 @@
     "eslint-config-1stdibs": "^2.0.1",
     "eslint-plugin-jasmine": "^1.6.0",
     "eslint-plugin-react": "3.10.0",
+    "eslint-plugin-require-path-exists": "^1.0.25",
     "glob": "^5.0.15",
     "lodash.assign": "^3.2.0",
     "lodash.omit": "^3.1.0",
