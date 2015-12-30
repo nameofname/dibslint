@@ -2,8 +2,12 @@
   "name": "dibslint",
   "version": "1.4.1",
   "description": "1stdibs custom linting",
-  "author": "",
-  "license": "UNLICENSED",
+  "author": "1stdibs <npm@1stdibs.com> (https://1stdibs.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1stdibs/dibslint"
+  },
   "dependencies": {
     "eslint": "1.10.1",
     "eslint-config-1stdibs": "^2.0.1",
