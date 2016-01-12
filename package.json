@@ -13,7 +13,7 @@
     "eslint-config-1stdibs": "^2.2.0",
     "eslint-plugin-jasmine": "^1.6.0",
     "eslint-plugin-react": "3.10.0",
-    "eslint-plugin-require-path-exists": "git+ssh://git@github.com:1stdibs/eslint-plugin-require-path-exists.git#file-ext-whitelist",
+    "eslint-plugin-require-path-exists": "^1.1.4",
     "glob": "^5.0.15",
     "lodash.assign": "^3.2.0",
     "lodash.omit": "^3.1.0",
