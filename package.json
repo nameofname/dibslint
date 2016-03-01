@@ -1,6 +1,6 @@
 {
   "name": "dibslint",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "description": "1stdibs custom linting",
   "author": "1stdibs <npm@1stdibs.com> (https://1stdibs.com)",
   "license": "MIT",
