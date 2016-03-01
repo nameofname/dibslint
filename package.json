@@ -18,9 +18,7 @@
     "lodash.assign": "^3.2.0",
     "lodash.omit": "^3.1.0",
     "lodash.reduce": "^3.1.2",
-    "node-getopt": "^0.2.3",
-    "spawn-sync": "^1.0.13",
-    "try-thread-sleep": "^1.0.0"
+    "node-getopt": "^0.2.3"
   },
   "bin": {
     "dibslint": "./index.js"
