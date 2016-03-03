@@ -9,10 +9,11 @@
     "url": "https://github.com/1stdibs/dibslint"
   },
   "dependencies": {
-    "eslint": "1.10.1",
-    "eslint-config-1stdibs": "^2.3.0",
+    "eslint": "^2.2.0",
+    "eslint-config-1stdibs": "^3.0.0",
     "eslint-plugin-jasmine": "^1.6.0",
-    "eslint-plugin-react": "3.10.0",
+    "eslint-plugin-mocha": "^2.0.0",
+    "eslint-plugin-react": "^4.1.0",
     "eslint-plugin-require-path-exists": "^1.1.4",
     "glob": "^5.0.15",
     "lodash.assign": "^3.2.0",
