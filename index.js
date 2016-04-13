@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-var spawnSync = require('child_process').spawnSync;
+const spawnSync = require('child_process').spawnSync;
 
-var lintFileGroup = require('./lib/lintFileGroup');
-var lintGitFiles = require('./lib/lintGitFiles');
-var opt = require('node-getopt').create([
+const lintFileGroup = require('./lib/lintFileGroup');
+const lintGitFiles = require('./lib/lintGitFiles');
+const opt = require('node-getopt').create([
     ['w', 'warnings', 'enable warnings'],
     ['e', 'es6', 'allow es6 in .js files'],
     ['', 'git', 'lint only staged git files'],
@@ -16,7 +16,7 @@ var opt = require('node-getopt').create([
 .parseSystem();
 
 if (opt.options.version) {
-    var esLintVer = spawnSync('eslint', ['-v']);
+    const esLintVer = spawnSync('eslint', ['-v']);
     process.stdout.write(esLintVer.stdout);
     process.exit();
 } else if (opt.options.git) {
