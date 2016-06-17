@@ -1,6 +1,6 @@
 {
   "name": "dibslint",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "1stdibs custom linting",
   "author": "1stdibs <npm@1stdibs.com> (https://1stdibs.com)",
   "license": "MIT",
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "babel-eslint": "^6.0.4",
+    "babylon": "6.8.0",
     "eslint": "~2.12.0",
     "eslint-config-1stdibs": "~3.1.0",
     "eslint-plugin-flow-vars": "^0.4.0",
