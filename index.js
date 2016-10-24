@@ -10,14 +10,15 @@ const opt = require('node-getopt').create([
     ['', 'root[=path]', 'look for js files in this directory'],
     ['h', 'help', 'display this help'],
     ['f', 'format=format', 'set output format'],
-    ['v', 'version', 'display eslint version info']
+    ['v', 'version', 'display version info']
 ])
 .bindHelp()
 .parseSystem();
 
 if (opt.options.version) {
-    const esLintVer = spawnSync('eslint', ['-v']);
-    process.stdout.write(esLintVer.stdout);
+    console.log(`dibslint: ${require('./package').version}`);
+    console.log(`eslint: ${require('eslint/package').version}`);
+    console.log(`eslint-config-1stdibs: ${require('eslint-config-1stdibs/package').version}`);
     process.exit();
 } else if (opt.options.git) {
     process.exit(lintGitFiles(opt));
