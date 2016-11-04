@@ -27,5 +27,8 @@
   },
   "bin": {
     "dibslint": "./index.js"
+  },
+  "scripts": {
+    "postinstall": "node ./lib/postinstall"
   }
 }
